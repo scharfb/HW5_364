@@ -1,0 +1,5 @@
+<form action="{{ url_for('update', item=itemID) }}" method="POST">
+    {{ form.csrf_token }}
+    {{ form.priority.label }} {{ form.priority() }}
+    {{ form.update() }}
+</form>
